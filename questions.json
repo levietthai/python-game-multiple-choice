@@ -1,0 +1,822 @@
+[
+  {
+    "question": "Biến nào sau đây là không hợp lệ trong Python?",
+    "options": [
+      "A. _var1",
+      "B. myVar",
+      "C. 1variable",
+      "D. var_1"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Lệnh nào dùng để kiểm tra phiên bản pip?",
+    "options": [
+      "A. pip --version",
+      "B. check pip",
+      "C. pip.version()",
+      "D. pip info"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Hàm nào được dùng để chuyển chuỗi sang chữ thường?",
+    "options": [
+      "A. upper()",
+      "B. lowercase()",
+      "C. lower()",
+      "D. downcase()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm insert() trong list dùng để làm gì?",
+    "options": [
+      "A. Thêm phần tử vào cuối danh sách",
+      "B. Thêm phần tử vào đầu danh sách",
+      "C. Thêm phần tử vào vị trí chỉ định",
+      "D. Xóa phần tử khỏi danh sách"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Công cụ nào được dùng để đóng gói tập tin thực thi từ mã nguồn Python?",
+    "options": [
+      "A. pybuilder",
+      "B. pip",
+      "C. py2exe",
+      "D. virtualenv"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "IDE nào tích hợp sẵn khi cài Python?",
+    "options": [
+      "A. PyCharm",
+      "B. IDLE",
+      "C. Jupyter",
+      "D. VS Code"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Lệnh nào dùng để lấy kiểu dữ liệu của biến x?",
+    "options": [
+      "A. typeof(x)",
+      "B. type(x)",
+      "C. gettype(x)",
+      "D. datatype(x)"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh nào đúng để nhập mô-đun math?",
+    "options": [
+      "A. import Math",
+      "B. from math import *",
+      "C. use math",
+      "D. include math"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Phương thức nào dùng để loại bỏ khoảng trắng ở đầu và cuối chuỗi?",
+    "options": [
+      "A. clean()",
+      "B. strip()",
+      "C. remove()",
+      "D. trim()"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Kết quả của biểu thức: \"Hello\" + str(5) là gì?",
+    "options": [
+      "A. Hello5",
+      "B. Hello 5",
+      "C. Hello+5",
+      "D. Lỗi"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Từ khóa nào dùng để định nghĩa hàm trong Python?",
+    "options": [
+      "A. function",
+      "B. define",
+      "C. def",
+      "D. create"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Toán tử nào được dùng để so sánh bằng trong Python?",
+    "options": [
+      "A. =",
+      "B. ==",
+      "C. ===",
+      "D. eq"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Hàm nào dùng để lấy phần tử cuối cùng của list mylist?",
+    "options": [
+      "A. mylist[last()]",
+      "B. mylist[len(mylist)]",
+      "C. mylist[-1]",
+      "D. mylist.last()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Lệnh nào dùng để thoát khỏi vòng lặp trong Python?",
+    "options": [
+      "A. stop",
+      "B. exit",
+      "C. break",
+      "D. quit"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Trong Python, chú thích nhiều dòng được thực hiện bằng gì?",
+    "options": [
+      "A. //",
+      "B. ''' hoặc \"\"\"",
+      "C. #",
+      "D. /* */"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Kết quả của biểu thức 3 * 'Hi' là gì?",
+    "options": [
+      "A. HiHiHi",
+      "B. 3Hi",
+      "C. Hi3",
+      "D. Lỗi"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Lệnh nào giúp bạn đọc toàn bộ nội dung còn lại trong một file?",
+    "options": [
+      "A. file.getall()",
+      "B. file.read()",
+      "C. file.readline()",
+      "D. file.readlines()"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Để kiểm tra một khóa có tồn tại trong dictionary không, ta dùng:",
+    "options": [
+      "A. haskey(dict, key)",
+      "B. dict.exists(key)",
+      "C. key in dict",
+      "D. dict.has_key(key)"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Khi sử dụng print(type(3.14)), kết quả trả về là gì?",
+    "options": [
+      "A. float",
+      "B. <class 'float'>",
+      "C. number",
+      "D. decimal"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Phương thức nào dùng để thay thế chuỗi con trong Python?",
+    "options": [
+      "A. replace()",
+      "B. change()",
+      "C. swap()",
+      "D. substitute()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Phương thức nào trả về độ dài của chuỗi trong Python?",
+    "options": [
+      "A. count()",
+      "B. size()",
+      "C. length()",
+      "D. len()"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "Lệnh nào được dùng để nhập dữ liệu từ bàn phím?",
+    "options": [
+      "A. enter()",
+      "B. get()",
+      "C. input()",
+      "D. read()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm nào dùng để làm tròn số thực xuống số nguyên gần nhất?",
+    "options": [
+      "A. round()",
+      "B. floor()",
+      "C. trunc()",
+      "D. ceil()"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Đâu là một tuple hợp lệ trong Python?",
+    "options": [
+      "A. [1, 2, 3]",
+      "B. {1, 2, 3}",
+      "C. (1, 2, 3)",
+      "D. <1, 2, 3>"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Mảng NumPy cho phép thao tác với kiểu dữ liệu nào?",
+    "options": [
+      "A. Chỉ kiểu nguyên",
+      "B. Chỉ kiểu thực",
+      "C. Chỉ kiểu chuỗi",
+      "D. Tất cả các kiểu dữ liệu"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "Từ khóa nào dùng để khai báo biến toàn cục trong hàm?",
+    "options": [
+      "A. local",
+      "B. all",
+      "C. global",
+      "D. public"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Phương thức nào dùng để thêm một phần tử vào từ điển?",
+    "options": [
+      "A. append()",
+      "B. update()",
+      "C. insert()",
+      "D. add()"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Lệnh nào dùng để tạo tập hợp rỗng?",
+    "options": [
+      "A. set()",
+      "B. {}",
+      "C. empty()",
+      "D. new_set()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Từ khóa elif dùng để làm gì?",
+    "options": [
+      "A. Bắt lỗi",
+      "B. Kết thúc chương trình",
+      "C. Kiểm tra điều kiện khác",
+      "D. Lặp lại vòng lặp"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là biểu thức logic đúng trong Python?",
+    "options": [
+      "A. x and y",
+      "B. x && y",
+      "C. x AND y",
+      "D. x & y"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Phương thức nào dùng để lấy phần tử và đồng thời xóa khỏi danh sách?",
+    "options": [
+      "A. pop()",
+      "B. remove()",
+      "C. delete()",
+      "D. extract()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Để kiểm tra kiểu dữ liệu của biến x, bạn dùng:",
+    "options": [
+      "A. isinstance(x, type)",
+      "B. checktype(x)",
+      "C. gettype(x)",
+      "D. type(x)"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Từ khóa continue dùng để làm gì trong vòng lặp?",
+    "options": [
+      "A. Kết thúc vòng lặp",
+      "B. Thoát khỏi chương trình",
+      "C. Bỏ qua lần lặp hiện tại",
+      "D. Lặp lại từ đầu"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là một cách khai báo biến hợp lệ trong Python?",
+    "options": [
+      "A. int x = 5",
+      "B. let x = 5",
+      "C. x = 5",
+      "D. var x = 5"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Khi sử dụng range(1, 5), kết quả là:",
+    "options": [
+      "A. [1, 2, 3, 4, 5]",
+      "B. [1, 2, 3, 4]",
+      "C. [1, 5]",
+      "D. [0, 1, 2, 3, 4]"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Hàm abs(-10) trả về:",
+    "options": [
+      "A. -10",
+      "B. 0",
+      "C. 10",
+      "D. None"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là kết quả của biểu thức: bool(0)?",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. 0"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Phương thức nào dùng để kiểm tra chuỗi có chứa toàn chữ số?",
+    "options": [
+      "A. isdigit()",
+      "B. isnumeric()",
+      "C. isnumber()",
+      "D. isinteger()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Trong Python, từ khóa pass có nghĩa gì?",
+    "options": [
+      "A. Dừng vòng lặp",
+      "B. Không làm gì cả",
+      "C. Chuyển giá trị",
+      "D. Thoát khỏi hàm"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Biểu thức not True cho kết quả là:",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. 1"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Phương thức nào dùng để nối nhiều chuỗi thành một chuỗi duy nhất?",
+    "options": [
+      "A. concat()",
+      "B. merge()",
+      "C. join()",
+      "D. combine()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm nào trả về số lượng phần tử trong một list?",
+    "options": [
+      "A. size()",
+      "B. count()",
+      "C. len()",
+      "D. length()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu lệnh x = [1, 2, 3]; x[1] = 10 thực hiện điều gì?",
+    "options": [
+      "A. Thay đổi phần tử thứ hai thành 10",
+      "B. Thêm phần tử 10 vào cuối danh sách",
+      "C. Xóa phần tử thứ hai",
+      "D. Tạo list mới"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Mô-đun nào được dùng để xử lý thời gian trong Python?",
+    "options": [
+      "A. calendar",
+      "B. datetime",
+      "C. time",
+      "D. clock"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Kết quả của biểu thức 3 > 2 and 5 < 10 là gì?",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. 1"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Đâu là cú pháp đúng để định nghĩa một hàm có tham số mặc định?",
+    "options": [
+      "A. def func(x, y = 10):",
+      "B. function func(x = 10, y)",
+      "C. define func(x, y = 10)",
+      "D. def func(x = 10, y):"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Kết quả của type([]) là gì?",
+    "options": [
+      "A. list",
+      "B. <class 'list'>",
+      "C. array",
+      "D. collection"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Hàm max([3, 5, 7]) trả về:",
+    "options": [
+      "A. 3",
+      "B. 5",
+      "C. 7",
+      "D. 15"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là kiểu dữ liệu không thay đổi (immutable) trong Python?",
+    "options": [
+      "A. list",
+      "B. set",
+      "C. tuple",
+      "D. dict"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Phép gán nào tạo hai biến cùng tham chiếu đến một list?",
+    "options": [
+      "A. a = b = [1, 2, 3]",
+      "B. a == b == [1, 2, 3]",
+      "C. a, b = [1, 2, 3]",
+      "D. a = [1, 2, 3]; b = [1, 2, 3]"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Hàm nào được sử dụng để tính căn bậc hai trong Python?",
+    "options": [
+      "A. sqrt()",
+      "B. square()",
+      "C. root()",
+      "D. power()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Để dùng hàm sqrt(), bạn cần nhập mô-đun nào?",
+    "options": [
+      "A. random",
+      "B. math",
+      "C. os",
+      "D. numpy"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh x = input(\"Enter:\") sẽ trả về kiểu dữ liệu nào?",
+    "options": [
+      "A. int",
+      "B. float",
+      "C. str",
+      "D. object"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là kiểu dữ liệu hợp lệ trong Python?",
+    "options": [
+      "A. fraction",
+      "B. int",
+      "C. decimal",
+      "D. numeric"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh list(\"abc\") cho kết quả gì?",
+    "options": [
+      "A. ['abc']",
+      "B. ('a', 'b', 'c')",
+      "C. ['a', 'b', 'c']",
+      "D. 'abc'"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm nào trả về phần tử nhỏ nhất trong danh sách?",
+    "options": [
+      "A. small()",
+      "B. least()",
+      "C. min()",
+      "D. minimum()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Từ khóa lambda dùng để tạo gì?",
+    "options": [
+      "A. vòng lặp",
+      "B. hàm ẩn danh",
+      "C. module",
+      "D. class"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh nào trả về số thực gần nhất của 3.14159 với 2 chữ số thập phân?",
+    "options": [
+      "A. round(3.14159)",
+      "B. round(3.14159, 2)",
+      "C. floor(3.14159)",
+      "D. int(3.14159)"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Để sử dụng random.randint(1, 10), bạn cần:",
+    "options": [
+      "A. import random",
+      "B. include random",
+      "C. use random",
+      "D. from random"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Hàm type() trả về gì?",
+    "options": [
+      "A. Kiểu dữ liệu của đối tượng",
+      "B. Tên biến",
+      "C. Giá trị số",
+      "D. Địa chỉ bộ nhớ"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu lệnh nào sau đây là vòng lặp đúng cú pháp trong Python?",
+    "options": [
+      "A. for i to 10:",
+      "B. loop i in range(10):",
+      "C. for i in range(10):",
+      "D. foreach i in range(10):"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Phương thức nào trả về một bản sao của danh sách?",
+    "options": [
+      "A. list.copy()",
+      "B. list.clone()",
+      "C. list.duplicate()",
+      "D. list.backup()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Từ khóa in được dùng để:",
+    "options": [
+      "A. Khởi tạo biến",
+      "B. Duyệt phần tử trong container",
+      "C. Nhập dữ liệu",
+      "D. Khai báo hàm"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh nào là đúng để kiểm tra số chẵn?",
+    "options": [
+      "A. if x % 2 == 0:",
+      "B. if x mod 2:",
+      "C. if x // 2 == 0:",
+      "D. if x / 2 == 0:"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Trong Python, None là:",
+    "options": [
+      "A. Một chuỗi rỗng",
+      "B. Một biến số nguyên đặc biệt",
+      "C. Một đối tượng đại diện cho không có giá trị",
+      "D. Số 0"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu lệnh nào sau đây tạo ra một dictionary?",
+    "options": [
+      "A. d = (\"a\":1, \"b\":2)",
+      "B. d = [\"a\":1, \"b\":2]",
+      "C. d = {\"a\":1, \"b\":2}",
+      "D. d = <\"a\":1, \"b\":2>"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm nào dùng để sắp xếp danh sách theo thứ tự tăng dần?",
+    "options": [
+      "A. sort()",
+      "B. arrange()",
+      "C. order()",
+      "D. organize()"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Trong Python, câu lệnh del x có tác dụng gì?",
+    "options": [
+      "A. Gán x bằng None",
+      "B. Xóa giá trị trong x",
+      "C. Giải phóng biến x khỏi bộ nhớ",
+      "D. Reset x về 0"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Khi sử dụng with open(\"file.txt\") as f:, lợi ích chính là gì?",
+    "options": [
+      "A. Không cần đóng file thủ công",
+      "B. Dễ đọc file hơn",
+      "C. Ghi dữ liệu nhanh hơn",
+      "D. Tiết kiệm bộ nhớ"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Từ khóa raise được sử dụng để:",
+    "options": [
+      "A. Khai báo biến toàn cục",
+      "B. Thoát khỏi vòng lặp",
+      "C. Gây ra một ngoại lệ",
+      "D. Tăng giá trị biến"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu lệnh nào được dùng để kiểm tra độ dài của một từ điển?",
+    "options": [
+      "A. len(dict)",
+      "B. size(dict)",
+      "C. length(dict)",
+      "D. count(dict)"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Phương thức keys() của dictionary trả về gì?",
+    "options": [
+      "A. Danh sách các giá trị",
+      "B. Danh sách các cặp khóa-giá trị",
+      "C. Danh sách các khóa",
+      "D. Số lượng phần tử"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Để thêm một cặp khóa-giá trị vào dictionary, dùng cú pháp nào?",
+    "options": [
+      "A. dict.add(key, value)",
+      "B. dict.insert(key, value)",
+      "C. dict[key] = value",
+      "D. dict.append(key, value)"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là một tuple rỗng hợp lệ?",
+    "options": [
+      "A. []",
+      "B. {}",
+      "C. ()",
+      "D. <>"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Hàm isinstance(x, int) trả về True khi nào?",
+    "options": [
+      "A. x là một số thực",
+      "B. x là một chuỗi số",
+      "C. x là kiểu int",
+      "D. x là kiểu float"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Đâu là một phương thức hợp lệ của chuỗi trong Python?",
+    "options": [
+      "A. push()",
+      "B. append()",
+      "C. upper()",
+      "D. insert()"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Phép toán 5 // 2 trả về:",
+    "options": [
+      "A. 2.5",
+      "B. 2",
+      "C. 3",
+      "D. 1"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu lệnh nào trả về phần ảo của số phức x = complex(2, 3)?",
+    "options": [
+      "A. x.imag",
+      "B. x.real",
+      "C. imag(x)",
+      "D. x.imaginary"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Lệnh round(3.678, 2) trả về:",
+    "options": [
+      "A. 3.67",
+      "B. 3.68",
+      "C. 3.6",
+      "D. 4"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Để tạo danh sách mới gồm các phần tử lẻ từ list a, dùng:",
+    "options": [
+      "A. [x for x in a if x % 2 == 1]",
+      "B. filter(lambda x: x % 2 == 1, a)",
+      "C. Cả hai đáp án trên đúng",
+      "D. Không có cách nào đúng"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Mệnh đề nào là đúng khi nói về từ khóa try...except?",
+    "options": [
+      "A. Dùng để khai báo biến cục bộ",
+      "B. Dùng để xử lý ngoại lệ",
+      "C. Dùng để kiểm tra điều kiện",
+      "D. Dùng để tạo vòng lặp"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Đâu là một phương thức hợp lệ của chuỗi trong Python?",
+    "options": [
+      "A. push()",
+      "B. append()",
+      "C. upper()",
+      "D. insert()"
+    ],
+    "answer": "C"
+  }
+]

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .question {
+            margin-bottom: 1.5rem;
+        }
+
+        .question h1 {
+            color: #1a73e8;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .question p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .options {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .option {
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-align: left;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .option:hover {
+            border-color: #1a73e8;
+            background-color: #f8f9fa;
+        }
+
+        .option.selected {
+            border-color: #1a73e8;
+            background-color: #e8f0fe;
+        }
+
+        .option.correct {
+            border-color: #34a853;
+            background-color: #e6f4ea;
+        }
+
+        .option.incorrect {
+            border-color: #ea4335;
+            background-color: #fce8e6;
+        }
+
+        .controls {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .score {
+            font-size: 1.1rem;
+            color: #1a73e8;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #nextBtn {
+            background-color: #1a73e8;
+            color: white;
+            min-width: 120px;
+        }
+
+        #nextBtn:hover {
+            background-color: #1557b0;
+        }
+
+        #nextBtn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+                margin: 0.5rem;
+            }
+
+            .question h1 {
+                font-size: 1.3rem;
+            }
+
+            .question p {
+                font-size: 1rem;
+            }
+
+            .option {
+                padding: 0.8rem;
+                font-size: 0.95rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .score {
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+
+            #nextBtn {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
+        /* Prevent text selection */
+        .option, button {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        /* Add touch feedback for mobile */
+        @media (hover: none) {
+            .option:active {
+                transform: scale(0.98);
+            }
+
+            #nextBtn:active {
+                transform: scale(0.98);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <h1>Question <span id="questionNumber">1</span></h1>
+            <p id="questionText"></p>
+        </div>
+        <div class="options" id="options">
+        </div>
+        <div class="controls">
+            <div class="score">Score: <span id="score">0</span></div>
+            <button id="nextBtn" disabled>Next Question</button>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentQuestion = 0;
+        let score = 0;
+        let selectedOption = null;
+
+        // Load questions from JSON file
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(data => {
+                questions = data;
+                loadQuestion();
+            })
+            .catch(error => console.error('Error loading questions:', error));
+
+        function loadQuestion() {
+            const question = questions[currentQuestion];
+            document.getElementById('questionNumber').textContent = currentQuestion + 1;
+            document.getElementById('questionText').textContent = question.question;
+            
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option';
+                button.textContent = option;
+                button.onclick = () => selectOption(button, option);
+                optionsContainer.appendChild(button);
+            });
+
+            document.getElementById('nextBtn').disabled = true;
+            selectedOption = null;
+        }
+
+        function selectOption(button, option) {
+            if (selectedOption) return;
+
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            button.classList.add('selected');
+            selectedOption = option;
+
+            const question = questions[currentQuestion];
+            const isCorrect = option.startsWith(question.answer + '.');
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                score++;
+                document.getElementById('score').textContent = score;
+            } else {
+                button.classList.add('incorrect');
+                // Show correct answer
+                options.forEach(opt => {
+                    if (opt.textContent.startsWith(question.answer + '.')) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+
+            document.getElementById('nextBtn').disabled = false;
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                loadQuestion();
+            } else {
+                alert(`Quiz completed! Your final score is ${score}/${questions.length}`);
+                currentQuestion = 0;
+                score = 0;
+                document.getElementById('score').textContent = score;
+                loadQuestion();
+            }
+        });
+    </script>
+</body>
+</html>
